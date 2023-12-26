@@ -10,11 +10,12 @@ import inspect
 from datetime import date, datetime
 from datajoint.utils import to_camel_case
 from collections import OrderedDict
+from collections.abc import Iterable
 
 try:
-    from collections import Iterable, Mapping
+    from collections import  Mapping
 except:
-    from collections.abc import Iterable, Mapping
+    from collections.abc import  Mapping
 
 # try/except is necessary to support all versions of dj
 try:
